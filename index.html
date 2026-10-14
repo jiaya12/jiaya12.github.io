@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiayan Yang</title>
+<style>
+  :root {
+    --ink: #1b1b1b;
+    --muted: #5a5a5a;
+    --line: #dddddd;
+    --accent: #8a1f2b;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  header {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  header img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: #f0f0f0;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin: 0 0 6px;
+    letter-spacing: 0.01em;
+  }
+  .role {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+  .contact {
+    font-size: 0.92rem;
+  }
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .contact a:hover { text-decoration: underline; }
+  .contact span.sep {
+    color: var(--line);
+    margin: 0 8px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+    margin: 40px 0 16px;
+  }
+  section p {
+    margin: 0 0 14px;
+    font-size: 0.98rem;
+  }
+  .pub {
+    margin: 0 0 18px;
+    font-size: 0.96rem;
+  }
+  .pub .title {
+    font-weight: bold;
+  }
+  .pub .venue {
+    color: var(--muted);
+  }
+  .pub .links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.88rem;
+    margin-right: 12px;
+  }
+  .pub .links a:hover { text-decoration: underline; }
+  .keywords {
+    font-size: 0.94rem;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 56px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- Replace photo.jpg with your own headshot in this same folder -->
+    <img src="photo.jpg" alt="Photo of Jiayan Yang">
+    <div>
+      <h1>Jiayan Yang</h1>
+      <p class="role">PhD Researcher, Utrecht University</p>
+      <p class="contact">
+        <a href="mailto:j.yang2@uu.nl">j.yang2@uu.nl</a>
+        <span class="sep">&middot;</span>
+        <a href="https://github.com/jiaya12">GitHub</a>
+        <span class="sep">&middot;</span>
+        <a href="https://www.linkedin.com/in/jiayanyang31">LinkedIn</a>
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      I am a PhD researcher at the Department of Information and Computing Sciences,
+      Utrecht University. I work on what happens after a model has been trained. Its
+      scores still have to be turned into decisions, and I study how to calibrate,
+      aggregate and threshold the outputs of a model that cannot be retrained so that
+      those decisions meet stated requirements. My experiments so far use
+      intensive-care data, and the methods are not specific to medicine.
+    </p>
+    <p class="keywords">
+      Calibration &middot; uncertainty quantification &middot;
+      decision-making under uncertainty &middot; subgroup reliability &middot;
+      distribution shift
+    </p>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <div class="title">From Clinical Risk Prediction to Operational Decisions: An Uncertainty-Aware Framework for ICU Staffing</div>
+      <div>Jiayan Yang, Ad Feelders, Arno Siebes</div>
+      <div class="venue">ECML PKDD 2026, Applied Data Science Track</div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Severity-Stratified Calibration and Thresholding for Reliable ICU Alerts</div>
+      <div>Jiayan Yang, Ad Feelders, Arno Siebes</div>
+      <div class="venue">IEEE BIBM 2026</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Doctoral Research</h2>
+    <p>
+      Thesis title: <em>Turning Risk Scores into Reliable Decisions Without Retraining
+      the Model</em>. Two completed studies cover staffing under uncertain demand and
+      alerting with a sensitivity guarantee for each patient group. A third study asks
+      whether such decision rules keep their guarantees when the data change over time.
+      Supervised by Ad Feelders and Arno Siebes.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Department of Information and Computing Sciences, Utrecht University<br>
+      Princetonplein 5, 3584 CC Utrecht, the Netherlands<br>
+      <a href="mailto:j.yang2@uu.nl">j.yang2@uu.nl</a>
+    </p>
+  </section>
+
+  <footer>
+    Last updated October 2026.
+  </footer>
+
+</div>
+</body>
+</html>
